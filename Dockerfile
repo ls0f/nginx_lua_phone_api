@@ -24,6 +24,7 @@ RUN    wget http://openresty.org/download/ngx_openresty-1.7.10.1.tar.gz \
   && rm -rf /ngx_openresty*
 
 RUN mkdir -p /opt/nginx
+RUN mkdir -p /opt/nginx/logs/
 WORKDIR /opt/nginx
 COPY . /opt/nginx
 EXPOSE 8080
